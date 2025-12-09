@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Mini Tienda - Proyecto Final</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Contenedor específico para el header -->
+        <div id="header-container"></div>
+        
+        <!-- Contenedor para el contenido dinámico -->
+        <div id="content" class="content">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Cargando Mini Tienda...</p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🛒 Mini Tienda - Proyecto Final de Aplicaciones Web</p>
+            <p>© 2024 - Microfrontends, API REST, DOM, BOM, Routing</p>
+        </footer>
+    </div>
+
+    <!-- Scripts como módulos ES6 -->
+    <script type="module" src="components/header.js"></script>
+    <script type="module" src="components/productList.js"></script>
+    <script type="module" src="components/cart.js"></script>
+    <script type="module" src="components/stats.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
