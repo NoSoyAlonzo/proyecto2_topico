@@ -74,13 +74,13 @@ connection.connect((err) => {
           if (count === 0) {
             // 5. Insertar datos de ejemplo solo si está vacía
             const insertDataSQL = `
-              INSERT INTO products (name, price, stock, description, image_url) VALUES
-              ('Laptop Gaming', 1299.99, 15, 'Laptop para juegos de alta gama', 'https://via.placeholder.com/150/FF6B6B/FFFFFF?text=Laptop'),
-              ('Mouse Inalámbrico', 49.99, 50, 'Mouse ergonómico inalámbrico', 'https://via.placeholder.com/150/4ECDC4/FFFFFF?text=Mouse'),
-              ('Teclado Mecánico', 89.99, 30, 'Teclado mecánico con RGB', 'https://via.placeholder.com/150/45B7D1/FFFFFF?text=Teclado'),
-              ('Monitor 24"', 199.99, 25, 'Monitor Full HD 144Hz', 'https://via.placeholder.com/150/96CEB4/FFFFFF?text=Monitor'),
-              ('Auriculares Bluetooth', 79.99, 40, 'Auriculares con cancelación de ruido', 'https://via.placeholder.com/150/FFEAA7/FFFFFF?text=Auriculares')
-            `;
+  INSERT INTO products (name, price, stock, description, image_url) VALUES
+  ('Laptop Gaming', 1299.99, 15, 'Laptop para juegos de alta gama', 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&h=300&fit=crop'),
+  ('Mouse Inalámbrico', 49.99, 50, 'Mouse ergonómico inalámbrico', 'https://images.unsplash.com/photo-1527814050087-3793815479db?w-400&h=300&fit=crop'),
+  ('Teclado Mecánico', 89.99, 30, 'Teclado mecánico con RGB', 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=300&fit=crop'),
+  ('Monitor 24"', 199.99, 25, 'Monitor Full HD 144Hz', 'https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=400&h=300&fit=crop'),
+  ('Auriculares Bluetooth', 79.99, 40, 'Auriculares con cancelación de ruido', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop')
+`;
             
             connection.query(insertDataSQL, (err, result) => {
               if (err) {
